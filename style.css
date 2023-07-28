@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:  15px;
+    border: none;
+    outline: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+body {
+    background:  hsl(225, 100%, 94%);
+    min-width: 375px;
+    max-width: 1440px;                                                                                                        
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: url(pattern-background-mobile.svg) no-repeat top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 330px;
+    background:#fff;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.card .card-image {
+    width: 100%;
+    height: 161px;
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-info {
+    padding: 30px 25px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-text h1 {
+    font-size: 24px;  
+    color: hsl(223, 47%, 23%);
+}
+
+.card-text p {
+    font-size: 16px; 
+    padding: 0 15px;
+    margin: 20px auto;
+    color: hsl(223, 47%, 23%);
+    line-height: 22px;
+}
+
+.plan {
+    background:  hsl(225, 100%, 98%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.plan .price {
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.plan .price img{
+    margin-right: 20px;                                            
+}
+
+.plan .price h4{
+    margin-bottom: 4px;                                            
+}
+
+.plan .price span{
+    color: hsl(223, 47%, 23%);                                          
+}
+
+.plan a {
+    color:  hsl(245, 75%, 52%);
+    font-weight: 600;                 
+    transition: all 0.3s ease;                         
+}
+
+.plan a:hover {
+    text-decoration: none;                                        
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    color: #fff;
+    padding:15px 67px;
+    cursor: pointer;
+    background:hsl(245, 75%, 52%);
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px black;
+    margin-bottom: 20px;
+    transition: all 0.3s ease; 
+}
+
+.btn button:hover {
+    background:hsl(245, 55%, 55%);
+}
+
+.btn a {
+    color: hsl(223, 47%, 23%);   
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease;  
+    text-decoration: none;
+}
+.btn a:hover {
+    color: hsl(221, 73%, 4%);
+}
+
+@media screen and (min-width:800px) {
+    main {
+        width: 100%;
+        height: 100vh;
+        background: url(pattern-background-desktop.svg) no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
